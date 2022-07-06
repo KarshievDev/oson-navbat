@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/sign_in.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="sign-in">
+            <i class="fas fa-user"></i>
+            <div class="sign">Sign In</div>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button>Login</button>
+            <div class="boxs">
+                <a href="#">Remember me</a>
+                <a href="#">Forgot Password</a>
+            </div>
+            <a href="{% url 'sign-up_en/' %}">- Or Sign Up In With -</a>
+        </div>
+    </div>
+</body>
+</html>

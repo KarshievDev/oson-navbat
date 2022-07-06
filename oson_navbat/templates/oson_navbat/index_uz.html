@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Oson Navbat</title>
+    <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="medilife-load"></div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="h-100 d-md-flex justify-content-between align-items-center">
+                            <p><span>Oson Navbat</span> Saytimizga Xush Kelibsiz</p>
+                            <p>Ish vaqti: Dushanbadan-Shanbagacha 8:00 dan 22:00 gacha Kontaktlar : <span>(71) 303-33-33</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header Area -->
+        <div class="main-header-area" id="stickyHeader">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 h-100">
+                        <div class="main-menu h-100">
+                            <nav class="navbar h-100 navbar-expand-lg">
+                                <!-- Logo Area  -->
+                                <a class="navbar-brand" href=""><img src="" alt="Logo"></a>
+
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#medilifeMenu" aria-controls="medilifeMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                                <div class="collapse navbar-collapse" id="medilifeMenu">
+                                    <!-- Menu Area -->
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="{% url ''  %}">Uy<span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{% url "about-us_uz/" %}">Biz haqimizda</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{% url 'services_uz/' %}">Xizmatlar</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{% url 'blog_uz/' %}">Yangiliklar</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{% url 'contact_uz/' %}">Aloqa</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Til</a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <div class="lang" style="display: flex;">
+                                                    <a class="dropdown-item" style="width: 50%;" href="{% url 'ru/' %}">Ru</a>
+                                                    <img style="width: 35px; padding: 5px;" src="{% static './img/icons/flag-400.png' %}" alt="">
+                                                </div>
+                                                <div class="lang" style="display: flex;">
+                                                    <a class="dropdown-item" style="width: 50%;" href="{% url 'uz/' %}">Uz</a>
+                                                    <img style="width: 35px; padding: 5px;" src="{% static './img/icons/flag-400 (1).png' %}" alt="">
+                                                </div>
+                                                <div class="lang" style="display: flex;">
+                                                    <a class="dropdown-item" style="width: 50%;" href="{% url 'en/' %}">Eng</a>
+                                                    <img style="width: 35px; padding: 5px;" src="{% static './img/icons/Без названия.jpg' %}" alt="">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- Appointment Button -->
+                                    <a href="{% url 'sign-in_uz/' %}" style="margin: 0px;" class="btn medilife-appoint-btn ml-30 ">Kirish</a>
+                                    <div style=" color: white;font-size: 30px; background-color: white; height: 50px; display: inline-block ;">|</div>
+                                    <a href="{% url 'sign-up_uz/' %}" style="margin: 0px;" class="btn medilife-appoint-btn ml-30">Ro'yxatdan o'tish</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Hero Area Start ***** -->
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel">
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide bg-img bg-overlay-white" style="background-image: url({% static 'img/bg-img/hero1.jpg' %});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h2 data-animation="fadeInUp" data-delay="100ms">Tibbiy xizmatlarimizga<br>100% ishonishingiz mumkin</h2>
+                                <h6 data-animation="fadeInUp" data-delay="400ms">Yuqori malakali mutaxassis qabuliga yozilish</h6>
+                                <a href="#navbat" class="btn medilife-btn mt-50" data-animation="fadeInUp" data-delay="700ms">Shifokor qabuliga yozilish<span>+</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide bg-img bg-overlay-white" style="background-image: url({% static 'img/bg-img/breadcumb3.jpg' %});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h2 data-animation="fadeInUp" data-delay="100ms">Tibbiy xizmatlarga<br>100% ishonishingiz mumkin</h2>
+                                <h6 data-animation="fadeInUp" data-delay="400ms">Masofadan turib, yuqori malakali shifokorlardan konsultatsiya oling</h6>
+                                <a href="#" class="btn medilife-btn mt-50" data-animation="fadeInUp" data-delay="700ms">Tibbiy konsultatsiya olish<span>+</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide bg-img bg-overlay-white" style="background-image: url({% static 'img/bg-img/breadcumb1.jpg' %});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h2 data-animation="fadeInUp" data-delay="100ms">Tibbiy xizmatlarimizga<br>100% ishonishingiz mumkin</h2>
+                                <h6 data-animation="fadeInUp" data-delay="400ms">Hududingizdagi shifoxonalar joylashuvi va ularda mavjud bo'lgan tekshiruv turlari/ <span>Naxlari</span></h6>
+                                <a href="#" class="btn medilife-btn mt-50" data-animation="fadeInUp" data-delay="700ms">Shifoxonalar joylashuvi va ulardagi tibbiy tekshiruv turlari<span>+</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Hero Area End ***** -->
+
+    <!-- ***** Book An Appoinment Area Start ***** -->
+    <div class="medilife-book-an-appoinment-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="appointment-form-content">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-12 col-lg-9">
+                                <div class="medilife-appointment-form" id="navbat">
+                                    <form action="#" method="post">
+                                        <div class="row align-items-end">
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="speciality">
+                                                        <option>Hudud</option>          
+                                                        <option>Tashkent</option>
+                                                        <option>Andijon</option>
+                                                        <option>Namangan</option>
+                                                        <option>Fergana</option>
+                                                        <option>Jizzax</option>
+                                                        <option>Sirdaryo</option>
+                                                        <option>Samarkand</option>
+                                                        <option>Qashqadaryo</option>
+                                                        <option>Surxondaryo</option>
+                                                        <option>Bukhara</option>
+                                                        <option>Navoi</option>
+                                                        <option>Khorezm</option>
+                                                        <option>Karakalpakstan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="speciality">
+                                                        <option>Shahar</option>          
+                                                        <option>Termiz shahar</option>
+                                                        <option>Termiz tuman</option>
+                                                        <option>Angor</option>
+                                                        <option>Jarqo'rg'on</option>
+                                                        <option>Qumqo'rg'on</option>
+                                                        <option>Bandixon</option>
+                                                        <option>Uzun</option>
+                                                        <option>Boysun</option>
+                                                        <option>Oltinsoy</option>
+                                                        <option>Denov</option>
+                                                        <option>Surxon</option>
+                                                        <option>Sho'rchi</option>
+                                                        <option>Sherobod</option>
+                                                        <option>Muzrobod</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="speciality">
+                                                        <option>Shifoxona</option>
+                                                        <option>1-SONLI OILAVIY POLIKLINIKA</option>
+                                                        <option>Termiz shahar 2-son oilaviy poliklinikasi</option>
+                                                        <option>Termiz shahar 3-son oilaviy poliklinikasi</option>
+                                                        <option>Termiz shahar 4-son oilaviy poliklinikasi</option>
+                                                        <option value="">TERMIZ SHAXAR 5 SON OILAVIY POLIKLINIKASI</option>
+                                                        <option>Respublika ixtisoslashtirilgan ko`z mikroxirurgiyasi ilmiy-amaliy tibbiyot markazi Termiz filiali</option>
+                                                        <option>SURXONDARYO VILOYAT BOLALAR KO`P TARMOQLI TIBBIYOT MARKAZI</option>
+                                                        <option>Surxondaryo viloyat Kardiologiya markazi</option>
+                                                        <option>SURXONDARYO VILOYAT KO`P TARMOKLI TIBBIYOT MARKAZI</option>
+                                                        <option>SURXONDARYO VILOYAT PERINATAL MARKAZI</option>
+                                                        <option>Termiz shahar Tibbiyot birlashmasi</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="speciality">
+                                                        <option>Speciality 1</option>
+                                                        <option>Speciality 2</option>
+                                                        <option>Speciality 3</option>
+                                                        <option>Speciality 4</option>
+                                                        <option>Speciality 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="doctors">
+                                                    <option>Doctors 1</option>
+                                                    <option>Doctors 2</option>
+                                                    <option>Doctors 3</option>
+                                                    <option>Doctors 4</option>
+                                                    <option>Doctors 5</option>
+                                                </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="date" id="date" placeholder="Date">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="time" id="time" placeholder="Time">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0" name="name" id="name" placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0" name="number" id="number" placeholder="Phone">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0" name="email" id="email" placeholder="E-mail">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-7">
+                                                <div class="form-group mb-0">
+                                                    <textarea name="message" class="form-control mb-0 border-top-0 border-right-0 border-left-0" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-5 mb-0">
+                                                <div class="form-group mb-0">
+                                                    <button type="submit" class="btn medilife-btn"><a href="./ariza.html"  style="color: white;">Uchrashuv belgilang<span>+</span></a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                <div class="medilife-contact-info">
+                                    <!-- Single Contact Info -->
+                                    <div class="single-contact-info mb-30">
+                                        <img src="{% static 'img/icons/alarm-clock.png' %}" alt="">
+                                        <p>Dushanba - Shanba 08:00 - 21:00<br>Yakshanba YOPIQ</p>
+                                    </div>
+                                    <!-- Single Contact Info -->
+                                    <div class="single-contact-info mb-30">
+                                        <img src="{% static 'img/icons/envelope.png' %}" alt="">
+                                        <p>admin@osonnavbat.com</p>
+                                    </div>
+                                    <!-- Single Contact Info -->
+                                    <div class="single-contact-info">
+                                        <img src="{% static 'img/icons/map-pin.png' %}" alt="">
+                                        <p>Uzbekistan, Termiz</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Book An Appoinment Area End ***** -->
+
+    <!-- ***** About Us Area Start ***** -->
+    <section class="medica-about-us-area section-padding-100-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="medica-about-content">
+                        <h2>Biz har doim bemorlarni birinchi o'ringa qo'yamiz</h2>
+                        <p>Platforma bemorlarga qulaylik yaratish va ularning uzog'ini yengil qilish. Shuningdek, vaqtlarini sezilarli darajada tejash hamda aholi o'rtasida tibbiy madaniyat, teletibbiyotni rivojlantirish maqsadida tashkil etilgan.</p>
+                        <a href="#" class="btn medilife-btn mt-50">View the services <span>+</span></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-sm-6">
+                            <div class="single-service-area d-flex">
+                                <div class="service-icon">
+                                    <i class="icon-doctor"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h5>Eng yaxshi shifokorlar</h5>
+                                    <p>Platforma doirasida ko'p bemorlar qabul qilgan va ularga onlayn konsultatsiya bergan hamda bemorlar tomonidan ijobiy izoh olgan shifokorlar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-sm-6">
+                            <div class="single-service-area d-flex">
+                                <div class="service-icon">
+                                    <i class="icon-blood-donation-1"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h5>Bolalar bog'chasi</h5>
+                                    <p>Dolor sit amet, consecte tuer elit, sed diam nonummy nibh euismod tincidunt ut ldolore magna.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-sm-6">
+                            <div class="single-service-area d-flex">
+                                <div class="service-icon">
+                                    <i class="icon-flask-2"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h5>Laboratoriya</h5>
+                                    <p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-sm-6">
+                            <div class="single-service-area d-flex">
+                                <div class="service-icon">
+                                    <i class="icon-emergency-call-1"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h5>Favqulodda yordam xonasi</h5>
+                                    <p>Dolor sit amet, consecte tuer elit, sed diam nonummy nibh euismod tincidunt ut ldolore magna.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** About Us Area End ***** -->
+
+    <!-- ***** Cool Facts Area Start ***** -->
+    <section class="medilife-cool-facts-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Single Cool Fact-->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact-area text-center mb-100">
+                        <i class="icon-hospital"></i>
+                        <h2><span class="counter">111</span></h2>
+                        <h6>Shifoxonalar</h6>
+                        <p>Xizmatlaridan foydalanishingiz mumkin bo'lgan shifoxonalar soni.</p>
+                    </div>
+                </div>
+                <!-- Single Cool Fact-->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact-area text-center mb-100">
+                        <i class="icon-atoms"></i>
+                        <h2><span class="counter">111</span>k</h2>
+                        <h6>Bemorlar</h6>
+                        <p>Bizning xizmatlarimizdan foydalanayotgan bemorlar soni.</p>
+                    </div>
+                </div>
+                <!-- Single Cool Fact-->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact-area text-center mb-100">
+                        <i class="icon-microscope"></i>
+                        <h2><span class="counter">11</span></h2>
+                        <h6>Mutaxassisliklar</h6>
+                        <p>Faoliyat yuritayotgan shifokorlarimiz mutaxassisliklari.</p>
+                    </div>
+                </div>
+                <!-- Single Cool Fact-->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact-area text-center mb-100">
+                        <i class="icon-doctor-1"></i>
+                        <h2><span class="counter">111</span></h2>
+                        <h6>Shifokorlar</h6>
+                        <p>Siz murojaat qilishingiz mumkin bo'lgan shifokorlarimiz soni.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Cool Facts Area End ***** -->
+
+    <!-- ***** Gallery Area Start ***** -->
+    <div class="medilife-gallery-area owl-carousel">
+        <!-- Single Gallery Item -->
+        <div class="single-gallery-item">
+            <img src="{% static 'img/bg-img/g1.jpg' %}" alt="">
+            <div class="view-more-btn">
+                <a href="{% static 'img/bg-img/g1.jpg' %}" class="btn gallery-img">Batafsil +</a>
+            </div>
+        </div>
+        <!-- Single Gallery Item -->
+        <div class="single-gallery-item">
+            <img src="{% static 'img/bg-img/g2.jpg' %}" alt="">
+            <div class="view-more-btn">
+                <a href="{% static 'img/bg-img/g2.jpg' %}" class="btn gallery-img">Batafsil +</a>
+            </div>
+        </div>
+        <!-- Single Gallery Item -->
+        <div class="single-gallery-item">
+            <img src="{% static 'img/bg-img/g3.jpg '%}" alt="">
+            <div class="view-more-btn">
+                <a href="{% static 'img/bg-img/g3.jpg ' %}" class="btn gallery-img">Batafsil +</a>
+            </div>
+        </div>
+
+        <!-- Single Gallery Item -->
+        <div class="single-gallery-item">
+            <img src="{% static 'img/bg-img/g4.jpg' %}" alt="">
+            <div class="view-more-btn">
+                <a href="{% static 'img/bg-img/g4.jpg' %}" class="btn gallery-img">Batafsil +</a>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Gallery Area End ***** -->
+
+    <!-- ***** Features Area Start ***** -->
+    <div class="medilife-features-area section-padding-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="features-content">
+                        <h2>Inqilobiy muassasada bemorlarni davolashning yangi usuli</h2>
+                        <p>Mamlakatimizda yangi ochilayotgan va faoliyat ko'rsatayotgan davlat shifoxonalari va xususiy klinikalarda foydalanilayotgan tibbiy tekshiruv moslamalar, ularning davolashdagi asosiy ahamiyati va bemorlarga yaratayotgan qulayliklari haqida bilishni xohlasangiz. Quyidagi tugmani bosing !</p>
+                        <a href="#" class="btn medilife-btn mt-50">Xizmatdan foydalanish <span>+</span></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="features-thumbnail">
+                        <img src="{% static 'img/bg-img/medical1.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Features Area End ***** -->
+
+    <!-- ***** Blog Area Start ***** -->
+    <div class="medilife-blog-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Single Blog Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-blog-area mb-100">
+                        <!-- Post Thumbnail -->
+                        <div class="blog-post-thumbnail">
+                            <img src="{% static 'img/blog-img/1.jpg"' %}" alt="">
+                            <!-- Post Date -->
+                            <div class="post-date">
+                                <a href="#">22-May 2022</a>
+                            </div>
+                        </div>
+                        <!-- Post Content -->
+                        <div class="post-content">
+                            <div class="post-author">
+                                <a href="#"><img src="{% static 'img/blog-img/p1.jpg' %}" alt=""></a>
+                            </div>
+                            <a href="#" class="headline">Tez orada O'zbekistondagi dori darmonlar qidiruv tizimi</a>
+                            <p>Smartfonga ega insonlar uchun qulay dori izlash tizimi hamda dorixonalar ma'lumotnomasi. Bemorlar shaxsiy profilida shifokor tomonidan yozib berilgan retseptdagi dorilar narxi va ular mavjud dorixonalar</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-blog-area mb-100">
+                        <!-- Post Thumbnail -->
+                        <div class="blog-post-thumbnail">
+                            <img src="{% static 'img/blog-img/1d0c589abe6de1fff10c92ef3cb2ac8e.jpg' %}" alt="">
+                            <!-- Post Date -->
+                            <div class="post-date">
+                                <a href="#">22-May 2022</a>
+                            </div>
+                        </div>
+                        <!-- Post Content -->
+                        <div class="post-content">
+                            <div class="post-author">
+                                <a href="#"><img src="{% static 'img/blog-img/p2.jpg' %}" alt=""></a>
+                            </div>
+                            <a href="#" class="headline">Platforma doirasida kasallik tarixi bo'limi</a>
+                            <p>Kasallik tarixi bo'limi - bemorning elektron shakldagi yopiq bazada turuvchi hujjati hisoblanadi. Ushbu bo'lim faqat shifokorlarga ko'rinadi va ularga xizmat qiladi</p>
+                            <a href="#" class="comments">7 Comments</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-blog-area mb-100">
+                        <!-- Post Thumbnail -->
+                        <div class="blog-post-thumbnail">
+                            <img src="{% static 'img/blog-img/3.jpg"' %}" alt="">
+                            <!-- Post Date -->
+                            <div class="post-date">
+                                <a href="#">22-May 2022</a>
+                            </div>
+                        </div>
+                        <!-- Post Content -->
+                        <div class="post-content">
+                            <div class="post-author">
+                                <a href="#"><img src="{% static 'img/blog-img/p3.jpg' %}" alt=""></a>
+                            </div>
+                            <a href="#" class="headline">Keng tarqalayotgan kasalliklar bo'yicha ma'lumot</a>
+                            <p>So'nggi vaqtlarda aholi orasida keng tarqalayotgan kasalliklar haqida to'liq ma'lumot olish imkoniga egasiz !</p>
+                            <a href="#" class="comments">3 Comments</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Blog Area End ***** -->
+
+    <!-- ***** Emergency Area Start ***** -->
+    <div class="medilife-emergency-area section-padding-100-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="emergency-content">
+                        <i class="icon-smartphone"></i>
+                        <h2>Qo'ng'iroqlar markazi</h2>
+                        <h3>(71) 303-33-33</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <!-- Single Emergency Helpline -->
+                        <div class="col-12 col-sm-6">
+                            <div class="single-emergency-helpline mb-50">
+                                <h5>Termiz</h5>
+                                <p>Gmail<br>admin@osonnavbat.com<br>Uzbekistan, Termiz</p>
+                            </div>
+                        </div>
+                        <!-- Single Emergency Helpline -->
+                        <div class="col-12 col-sm-6">
+                            <div class="single-emergency-helpline mb-50">
+                                <h5>Termiz</h5>
+                                <p>Gmail<br>admin@osonnavbat.com<br>Uzbekistan, Termiz</p>
+                            </div>
+                        </div>
+                        <!-- Single Emergency Helpline -->
+                        <div class="col-12 col-sm-6">
+                            <div class="single-emergency-helpline mb-50">
+                                <h5>Termiz</h5>
+                                <p>Gmail<br>admin@osonnavbat.com<br>Uzbekistan, Termiz</p>
+                            </div>
+                        </div>
+                        <!-- Single Emergency Helpline -->
+                        <div class="col-12 col-sm-6">
+                            <div class="single-emergency-helpline mb-50">
+                                <h5>Termiz</h5>
+                                <p>Gmail<br>admin@osonnavbat.com<br>Uzbekistan, Termiz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Emergency Area End ***** -->
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area section-padding-100">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area">
+                            <div class="footer-logo">
+                                <img src="{% static 'img/core-img/logo.png' %}" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer.</p>
+                            <div class="footer-social-info">
+                                <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/matchless.31"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://t.me/mashkhuroff"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area">
+                            <div class="widget-title">
+                                <h6>So'nggi yangiliklar</h6>
+                            </div>
+                            <div class="widget-blog-post">
+                                <!-- Single Blog Post -->
+                                <div class="widget-single-blog-post d-flex">
+                                    <div class="widget-post-thumbnail">
+                                        <img src="{% static 'img/blog-img/ln3.jpg' %}" alt="">
+                                    </div>
+                                    <div class="widget-post-content">
+                                        <a href="#">Shifokordan onlayn konsultatsiya</a>
+                                        <p>19-Aprel 2022</p>
+                                    </div>
+                                </div>
+                                <!-- Single Blog Post -->
+                                <div class="widget-single-blog-post d-flex">
+                                    <div class="widget-post-thumbnail">
+                                        <img src="{% static 'img/blog-img/ln2.jpg' %}" alt="">
+                                    </div>
+                                    <div class="widget-post-content">
+                                        <a href="#">Shaxsiy kabinetingizda shifokor yozib bergan retsept</a>
+                                        <p>19-Aprel 2022</p>
+                                    </div>
+                                </div>
+                                <!-- Single Blog Post -->
+                                <div class="widget-single-blog-post d-flex">
+                                    <div class="widget-post-thumbnail">
+                                        <img src="{% static 'img/blog-img/ln1.jpg' %}" alt="">
+                                    </div>
+                                    <div class="widget-post-content">
+                                        <a href="#">Hududingizdagi shifoxonalar va ulardagi tekshiruvlar</a>
+                                        <p>19-Aprel 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area">
+                            <div class="widget-title">
+                                <h6>Murojaat qiling</h6>
+                            </div>
+                            <div class="footer-contact-form">
+                                <form action="#" method="post">
+                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0" name="footer-name" id="footer-name" placeholder="Name">
+                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0" name="footer-email" id="footer-email" placeholder="Email">
+                                    <textarea name="message" class="form-control border-top-0 border-right-0 border-left-0" id="footerMessage" placeholder="Message"></textarea>
+                                    <button type="submit" class="btn medilife-btn">Murojaat <span>+</span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area">
+                            <div class="widget-title">
+                                <h6>Yangiliklar bildirishnomasi</h6>
+                            </div>
+
+                            <div class="footer-newsletter-area">
+                                <form action="#">
+                                    <input type="email" class="form-control border-0 mb-0" name="newsletterEmail" id="newsletterEmail" placeholder="Sizning emailingiz">
+                                    <button type="submit">Obuna bo'ling</button>
+                                </form>
+                                <p>Platformamizda bo'layotgan o'zgarish va yangiliklardan doimiy xabardor bo'lishni istasangiz. Ushbu xizmat aynan siz uchun. Elektron pochta manzilingizni kiriting va barchasini faollashtiring</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bottom-footer-content">
+                            <!-- Copywrite Text -->
+                            <div class="copywrite-text">
+                                <p><a target="_blank" href="https://oson-navbat.com">Oson Navbat</a></p>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Plugins js -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+
+</body>
+
+
+</html>

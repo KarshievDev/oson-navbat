@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% static static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/sign_up.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrap">
+            <h3>Registration Form</h3>
+            <div class="boxs">
+                <div class="box">
+                    <h4>First Name</h4>
+                    <input type="text" placeholder="James">
+                </div>
+                <div class="box">
+                    <h4>Last Name</h4>
+                    <input type="text" placeholder="Nelson">
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="box">
+                    <h4>Birthday</h4>
+                    <input class="day" type="text" placeholder="dd.mm.yyyy">
+                    <!-- <i class="fas fa-calendar-alt"></i> -->
+                </div>
+                <div class="box">
+                    <h4>Gender</h4>
+                    <div class="quti">   
+                        <div class="quticha">   
+                            <input class="check" type="radio" name="Gender" id=""> 
+                            <h5>Male</h5>
+                        </div>
+                        <div class="quticha">
+                            <input class="check" type="radio" name="Gender" id=""> 
+                            <h5>Famale</h5>
+                        </div>       
+                    </div>       
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="box">
+                    <h4>Email</h4>
+                    <input type="email" placeholder="admin@gmail.com">
+                </div>
+                <div class="box">
+                    <h4>Phone Number</h4>
+                    <input type="number" placeholder="+99871303333">
+                </div>
+            </div>
+            <h4></h4>
+            <select name="" id="select">
+                <option>Select</option>          
+                <option>Tashkent</option>
+                <option>Andijon</option>
+                <option>Namangan</option>
+                <option>Fergana</option>
+                <option>Jizzax</option>
+                <option>Sirdaryo</option>
+                <option>Samarkand</option>
+                <option>Qashqadaryo</option>
+                <option>Surxondaryo</option>
+                <option>Bukhara</option>
+                <option>Navoi</option>
+                <option>Khorezm</option>
+                <option>Karakalpakstan</option>
+            </select>
+            <h4 class="h4">Who do you want to register as</h4>
+            <select name="" id="select">
+                <option>Select</option>
+                <option>As a doctor</option>
+                <option>As a patient</option>
+            </select>
+            <button>Sign Up</button>
+            <a class="sign" href="{% url "sign-in_en/" %}">Or Sign In In With</a>
+        </div>
+    </div>
+</body>
+</html>

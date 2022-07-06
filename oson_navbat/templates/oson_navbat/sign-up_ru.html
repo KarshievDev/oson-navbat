@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/sign_up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Регистрация | Oson navbat</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrap">
+            <h3>Форма регистрации</h3>
+            <div class="boxs">
+                <div class="box">
+                    <h4>Имя</h4>
+                    <input type="text" placeholder="Джеймс">
+                </div>
+                <div class="box">
+                    <h4>Фамилия</h4>
+                    <input type="text" placeholder="Нельсон">
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="box">
+                    <h4>День рождения</h4>
+                    <input class="day" type="text" placeholder="дд.мм.гггг">
+                    <!-- <i class="fas fa-calendar-alt"></i> -->
+                </div>
+                <div class="box">
+                    <h4>Пол</h4>
+                    <div class="quti">   
+                        <div class="quticha">   
+                            <input class="check" type="radio" name="Gender" id=""> 
+                            <h5>Мужской</h5>
+                        </div>
+                        <div class="quticha">
+                            <input class="check" type="radio" name="Gender" id=""> 
+                            <h5>Женщина</h5>
+                        </div>       
+                    </div>       
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="box">
+                    <h4>Эл. адрес</h4>
+                    <input type="email" placeholder="admin@gmail.com">
+                </div>
+                <div class="box">
+                    <h4>Телефонный номер</h4>
+                    <input type="number" placeholder="+99871303333">
+                </div>
+            </div>
+            <h4></h4>
+            <select name="" id="select">
+                <option>Select</option>          
+                <option>Ташкент</option>
+                <option>Андижан</option>
+                <option>Наманган</option>
+                <option>Фергана</option>
+                <option>Джизакс</option>
+                <option>Сырдарья</option>
+                <option>Самарканд</option>
+                <option>Кашкадарья</option>
+                <option>Сурхандарьинская область</option>
+                <option>Бухара</option>
+                <option>Навои</option>
+                <option>Хорезм</option>
+                <option>Каракалпакстан</option>
+            </select>
+            <h4 class="h4">Кем вы хотите зарегистрироваться как</h4>
+            <select name="" id="select">
+                <option>Выбирать</option>
+                <option>Как доктор</option>
+                <option>Как пациент</option>
+            </select>
+            <button>Зарегистрироваться</button>
+            <a class="sign" href="{%  url 'sign-in_ru/' %}">Или Войдите с помощью</a>
+        </div>
+    </div>
+</body>
+</html>
